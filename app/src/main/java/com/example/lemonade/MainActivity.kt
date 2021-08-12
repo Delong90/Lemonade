@@ -193,19 +193,19 @@ class MainActivity : AppCompatActivity() {
         val textAction: TextView = findViewById(R.id.text_action)
         when(lemonadeState){
             SELECT -> {
-                textAction.text = "Щелкните, чтобы выбрать лимон!"
+                textAction.text = getString(R.string.lemon_select)
                 lemonImage!!.setImageResource(R.drawable.lemon_tree)
             }
             SQUEEZE -> {
-                textAction.text = "Нажмите, чтобы выжать из лимона!"
+                textAction.text =  getString(R.string.lemon_squeeze)
                 lemonImage!!.setImageResource(R.drawable.lemon_squeeze)
             }
             DRINK -> {
-                textAction.text = "Нажмите, чтобы выпить лимонад!"
+                textAction.text = getString(R.string.lemon_drink)
                 lemonImage!!.setImageResource(R.drawable.lemon_drink)
             }
             RESTART -> {
-                textAction.text = "Нажмите, чтобы начать снова!"
+                textAction.text = getString(R.string.lemon_empty_glass)
                 lemonImage!!.setImageResource(R.drawable.lemon_restart)
             }
 
